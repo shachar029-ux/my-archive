@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang='he' dir='ltr'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>READ ALL ABOUT ME</title>
+    <link rel='stylesheet' href='style.css?v=2.11'>
+</head>
+<body>
+    <div class='grid-overlay'></div>
+
+    <header>
+        <h1>READ ALL
+ABOUT ME</h1>
+    </header>
+
+    <!-- Language Toggle Button -->
+    <button class="lang-toggle-btn" id="lang-toggle-btn" data-lang="he">EN</button>
+
+    <!-- Draggable Spatial Container -->
+    <div id='world-container'>
+        <!-- Background labels and cards will be dynamically spawned here -->
+    </div>
+
+    <!-- Fixed Bottom Category Navigation -->
+    <div class='category-menu' id='category-menu'>
+        <button class='category-pill' data-category='motherhood'>הריון לידה ואימהות</button>
+        <button class='category-pill' data-category='relationships'>זוגיות ופרידות</button>
+        <button class='category-pill' data-category='appearance'>משקל ונראות</button>
+        <button class='category-pill' data-category='mental_health'>בריאות הנפש</button>
+        <button class='category-pill' data-category='career'>קריירה ושליטה בנרטיב</button>
+        <button class='category-pill' data-category='scandals'>שערוריות ופליטות פה</button>
+    </div>
+
+    <!-- Zoom Controls -->
+    <div class="zoom-controls" id="zoom-controls">
+        <button class="zoom-btn" id="zoom-in-btn">+</button>
+        <button class="zoom-btn" id="zoom-out-btn">&minus;</button>
+    </div>
+
+    <!-- Detail Modal -->
+    <div id='detail-modal' class='detail-modal'>
+        <!-- Navigation Arrows -->
+        <button class="modal-nav-btn prev" id="modal-prev-btn">&lt;</button>
+        <button class="modal-nav-btn next" id="modal-next-btn">&gt;</button>
+        <div class='modal-container'>
+            <button class='modal-close-btn' id='modal-close-btn'>&times;</button>
+            <div class='modal-media' id='modal-media'>
+                <!-- Image or video dynamically placed here -->
+            </div>
+            <div class='modal-content'>
+                <div class='modal-meta'>
+                    <span id='modal-source'></span>
+                    <span>|</span>
+                    <span id='modal-year'></span>
+                </div>
+                <h2 class='modal-title' id='modal-title'></h2>
+                <div class='modal-quote' id='modal-quote'></div>
+                <div class='modal-analysis' id='modal-analysis'></div>
+                <div class="modal-category-tag" id="modal-category-tag"></div>
+                <div class="modal-footer-nav">
+                    <button class="modal-footer-btn prev" id="modal-footer-prev-btn">הקודם &rarr;</button>
+                    <div class="modal-counter" id="modal-counter"></div>
+                    <button class="modal-footer-btn next" id="modal-footer-next-btn">&larr; הבא</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- App scripts -->
+    <script src='data.js?v=2.11'></script>
+    <script src='app.js?v=2.11'></script>
+</body>
+</html>
